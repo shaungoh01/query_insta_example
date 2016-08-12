@@ -27,8 +27,14 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
+<nav style="width:100%; height:40px;">
+	<a href="logout.php" class="btn btn-default" style="float:right; margin-right:20px;">Logout</a>
+</nav>
     <?php foreach($pic_arr->data as $pic){ ?>
 
     	<img src="<?php echo $pic->images->standard_resolution->url;?>"> </img>
